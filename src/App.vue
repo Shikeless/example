@@ -13,7 +13,6 @@ import MainLayout from "@/layouts/MainLayout";
 export default {
   computed: {
     layout() {
-      console.log(this.$route.meta);
       return (this.$route.meta.layout || "empty") + "-layout";
     }
   },
@@ -25,6 +24,7 @@ export default {
 </script>
 
 <style>
+@import url(./index.css);
 html,
 body {
   width: 100%;
