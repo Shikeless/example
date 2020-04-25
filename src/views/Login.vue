@@ -28,3 +28,12 @@
     </div>
   </form>
 </template>
+
+<style>
+.auth-card {
+  width: 500px;
+}
+.auth-submit {
+  width: 100%;
+}
+</style>
