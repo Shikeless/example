@@ -13,6 +13,12 @@ export default new VueRouter({
       component: () => import("./views/Login.vue"),
     },
     {
+      path: "/register",
+      name: "register",
+      meta: { layout: "empty" },
+      component: () => import("./views/Register.vue"),
+    },
+    {
       path: "/categories",
       name: "categories",
       meta: { layout: "main" },
@@ -53,12 +59,6 @@ export default new VueRouter({
       name: "record",
       meta: { layout: "main" },
       component: () => import("./views/Record.vue"),
-    },
-    {
-      path: "/register",
-      name: "register",
-      meta: { layout: "empty" },
-      component: () => import("./views/Register.vue"),
     },
   ],
 });
